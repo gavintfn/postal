@@ -1,5 +1,5 @@
 web:
-  host: postal.example.com
+  host: XXX$FQDNXXX
   protocol: https
 
 fast_server:
@@ -14,40 +14,40 @@ general:
 main_db:
   host: 127.0.0.1
   username: root
-  password:
-  database: postal_test
+  password:XXXMYSQL_ROOT_PASSWORDXXX
+  database: postal
 
 message_db:
   host: 127.0.0.1
   username: root
-  password:
-  prefix: postal_test
+  password:XXXMYSQL_ROOT_PASSWORDXXX
+  prefix: postal_msg
 
 rabbitmq:
   host: 127.0.0.1
-  username: guest
-  password: guest
+  username: postal
+  password: XXXMYSQL_ROOT_PASSWORDXXX
   vhost:
 
 smtp_server:
-  port: 2525
+  port: XXXSMTP_PORTXXX
 
 dns:
   mx_records:
-    - mx.postal.example.com
-  smtp_server_hostname: postal.example.com
-  spf_include: spf.postal.example.com
-  return_path: rp.postal.example.com
-  route_domain: routes.postal.example.com
-  track_domain: track.postal.example.com
+    - mx.XXXFQDNXXX
+  smtp_server_hostname: XXXFQDNXXX
+  spf_include: spf.XXXFQDNXXX
+  return_path: rp.XXXFQDNXXX
+  route_domain: routes.XXXFQDNXXX
+  track_domain: track.XXXFQDNXXX
 
 smtp:
   host: 127.0.0.1
-  port: 2525
+  port: XXXSMTP_PORTXXX
   username:
   password:
-  from_name: Postal
-  from_address: postal@yourdomain.com
+  from_name: XXXADMIN_USERNAMEXXX
+  from_address: XXXADMIN_EMAILXXX
 
 rails:
   environment: test

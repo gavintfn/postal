@@ -1,5 +1,5 @@
 web:
-  host: XXX$FQDNXXX
+  host: XXXFQDNXXX
   protocol: https
 
 fast_server:

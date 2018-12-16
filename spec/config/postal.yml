@@ -30,7 +30,12 @@ rabbitmq:
   vhost: /postal
 
 smtp_server:
-  port: XXXSMTP_PORTXXX
+  port: 25 
+  #tls_enabled: true
+  #tls_certificate_path: /etc/nginx/certs/XXXFQDNXXX/fullchain
+  #tls_private_key_path: /etc/nginx/certs/XXXFQDNXXX/key
+  #proxy_protocol: false
+  #log_connect: true
 
 dns:
   mx_records:
@@ -52,11 +57,6 @@ smtp:
   #password: XXXADMIN_PASSWORDXXX
   from_name: XXXADMIN_USERNAMEXXX
   from_address: XXXADMIN_EMAILXXX
-  #tls_enabled: true
-  #tls_certificate_path: /etc/nginx/certs/XXXFQDNXXX/fullchain
-  #tls_private_key_path: /etc/nginx/certs/XXXFQDNXXX/key
-  #proxy_protocol: false
-  #log_connect: true
 
 rails:
   secret_key: c3ed0d4723a5d08f8cdb03571ddec8366da74db114f5419187343632e9c0c0110da177c0cf79e6605a4ccfff6f2d9e716d99b6525401ad9c181466b57a1901ffeacb023d05c9ce69838dd826f54e29c846e9e3231697c6749648a9c706df20b50bec1d7ef81b0dbd91410b314c44a4c0cf74741df2de9f5bb144026a6f99954c
